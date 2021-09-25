@@ -27,7 +27,7 @@ namespace WebDataScrapper
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("start-maximized");
             options.AddArgument("disable-notifications");
-            driver = new ChromeDriver("..\\..\\..\\Resources", options);
+            driver = new ChromeDriver("Resources", options);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
         }
 

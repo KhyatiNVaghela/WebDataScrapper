@@ -6,18 +6,16 @@ namespace WebDataScrapper
     {
         static void Main(string[] args)
         {
-            // Console.WriteLine("Hello World!");
-            // Console.WriteLine("\nWhat is your name? ");
-            // var name = Console.ReadLine();
-            // var date = DateTime.Now;
-            // Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");
-            // Console.Write("\nPress any key to exit...");
-            // Console.ReadKey(true);
-
             Scrapping scrapping = new Scrapping();
             scrapping.start_Browser();
             scrapping.YouTubeScraping();
             scrapping.close_Browser(); 
+
+
+            ScrapingTest1 test1 = new ScrapingTest1();
+            test1.start_Browser();
+            test1.LTBlogScraping();
+            test1.close_Browser();
         }
     }
 }
